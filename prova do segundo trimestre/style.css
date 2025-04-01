@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+
+
+
+.topbar {
+    background-color: #004d00;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar {
+    color: darkgreen;
+    padding: 15px 0;
+    text-align: center;
+    background-color: white;
+    
+}
+
+.navbar .logo {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    color: darkgreen;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+    color: #004d00;
+}
+
+.navbar ul li a {
+    color:darkgreen;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('https// source.unsplash.com/1600*900/?nature,green') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    background:linear-gradient(to left , rgba(0, 128, 0, 0.7), rgba(0, 128, 0, 0.7)),url('carousel-1.jpg')no-repeat center center/cover;
+    height: 500px;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero .btn {
+    display: inline-block;
+    background: #004d00;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#quem{
+    text-align: left;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #d9f2d9;
+}
+
+.feature-box 
+    {
+        justify-content: space-around;
+        padding: 50px;
+        background: white;
+        box-shadow: 0px 4px 6px rgba(0 , 0 ,0 , 0.1);
+        border-radius: 8px;
+        width: 30%;
+        display: inline-block;
+    }
+
+.services {
+    padding: 50px 0;
+    background-color: #c2e0c2;
+}
+
+.service-box {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 30%;
+}
+.logo{
+    text-align: left;
+}
+.s0bre-nos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f8f8f8;
+}
+.texto{
+    max-width: 400px;
+
+}
+.imge{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.imge img{
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+.botao{
+    background-color: green;
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+}

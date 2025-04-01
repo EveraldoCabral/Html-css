@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Contador Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Meu Contador Digital</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Curiosidade</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Funcionamento</h1>
+            <div class="">
+                <span id="contador">0</span>
+            </div>
+            <div class="botoes">
+                <button onclick="incrementar()">+</button>
+                <button onclick="decrementar()">-</button>
+                <button onclick="resetar()">Reset</button>
+            </div>
+        </div>
+    </main>
+    <button onclick="toggleInfo()">ℹ️ Mais Informações</button>
+    <div id="info" class="hidden">
+    <h2>Sobre o Contador Digital</h2>
+
+    <p>O contador digital é uma ferramenta simples, mas muito útil, usada para contagens automáticas em diversas áreas, como programação, controle de processos e até em jogos.</p>
+    <h3>📌 Como funciona?</h3>
+
+    <p>Ele aumenta ou diminui o valor exibido sempre que um botão é pressionado. Também possui um botão de reset para voltar ao zero.</p>
+    <h3>📌 Para que serve?</h3>
+    <p>Contadores digitais são utilizados em diversas aplicações, como:</p>
+    <ul>
+        <li>🕹️ Jogos e placares</li>
+        <li>🧮 Cálculos matemáticos e estatísticas</li>
+        <li>⏳ Medição de tempo e eventos</li>
+        <li>📊 Controle de inventário e produção</li>
+    </ul>
+    </div>
+   
+
+    <script src="script.js"></script>
+
+</body>
+</html>
