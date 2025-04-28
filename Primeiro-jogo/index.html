@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida da sorte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Corrida da Sorte</h1>
+            <p>Saldo: <span id="saldo">100</span> moedas</p>
+        </header>
+
+        <main>
+            <section class="aposta">
+                <h2>Escolha seu corredor:</h2>
+                <form id="formAposta">
+                    <label><input type="radio" name="cavalo" value="1"> Cavalo 1</label>
+                    <label><input type="radio" name="cavalo" value="2"> Cavalo 2</label>
+                    <label><input type="radio" name="cavalo" value="3"> Cavalo 3</label>
+
+                    <div class="valor-aposta">
+                        <label>Valor da aposta:</label>
+                        <input type="number" id="valorAposta" min="1" value="10">
+                    </div>
+
+                    <button type="submit">Apostar</button>
+                </form>
+            </section>
+
+            <section class="corrida">
+                <h2>Pista de Corrida</h2>
+                <div class="pista">
+                    <div class="cavalo" id="cavalo1">🐎 Cavalo 1</div>
+                    <div class="cavalo" id="cavalo2">🐎 Cavalo 2</div>
+                    <div class="cavalo" id="cavalo3">🐎 Cavalo 3</div>
+                </div>
+            </section>
+
+            <section class="resultado">
+                <h2>Resultado:</h2>
+                <p id="mensagemResultado">Faça sua aposta!</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

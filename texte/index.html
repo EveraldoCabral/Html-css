@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Facebook</title>
+</head>
+<body>
+    <style>
+    *{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #1877f2;
+    color: white;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #165eab;
+}
+
+.main-container {
+    margin-top: 20px;
+}
+
+.post-section {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.posts-container {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.post-text {
+    font-size: 16px;
+}
+    </style>
+    <header>
+        <div class="container">
+            <h1>Mini Facebook</h1>
+            <button id="loginButton">Login</button>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="post-section">
+            <textarea id="postContent" placeholder="O que você está pensando?" rows="3"></textarea>
+            <button id="postButton">Publicar</button>
+        </div>
+
+        <div class="posts-container" id="postsContainer">
+            <!-- Posts serão exibidos aqui -->
+        </div>
+    </div>
+    <script>
+        document.getElementById('postButton').addEventListener('click', function() {
+    var postContent = document.getElementById('postContent').value;
+
+    if (postContent.trim() !== "") {
+        var postContainer = document.getElementById('postsContainer');
+
+        var newPost = document.createElement('div');
+        newPost.classList.add('post');
+        newPost.innerHTML = `
+            <p class="post-text">${postContent}</p>
+        `;
+
+        postContainer.appendChild(newPost);
+        document.getElementById('postContent').value = ""; // Limpa o campo de texto
+    } else {
+        alert("Por favor, escreva algo para publicar.");
+    }
+});
+    </script>
+
+</body>
+</html>

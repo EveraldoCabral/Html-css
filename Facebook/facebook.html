@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Facebook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container" id="login">
+    <h2>Entrar</h2>
+    <input type="text" id="username" placeholder="Seu nome">
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <div class="feed-container" id="feed" style="display: none;">
+    <h2 id="welcome"></h2>
+    <textarea id="postContent" placeholder="O que você está pensando?"></textarea>
+    <button onclick="postar()">Publicar</button>
+    <div id="posts"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
