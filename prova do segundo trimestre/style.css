@@ -8,6 +8,31 @@
 body {
     background-color: #f0f0f0;
 }
+@media (max-width:768px){
+    body{
+        background-color: darkred;
+    }
+}
+@media (max-width:768px){
+    .container{
+        background-color: darkred;
+    }
+}
+@media (max-width:768px){
+    .topbar{
+        background-color: darkred;
+    }
+}
+@media (max-width:768px){
+    .container{
+        background-color: darkred;
+    }
+}
+@media (max-width:768px){
+    {
+        background-color: darkred;
+    }
+}
 
 .container {
     width: 80%;

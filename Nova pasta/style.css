@@ -9,6 +9,11 @@ body {
     color: #333;
     background: #fff;
 }
+@media (max-width:768px){
+    body{
+        background-color: darkred;
+    }
+}
 
 header {
     color: white;
