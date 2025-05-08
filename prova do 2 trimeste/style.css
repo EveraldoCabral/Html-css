@@ -52,6 +52,11 @@ body{
     margin-top: auto;
 
 }
+@media (max-width:768px) {
+    body{
+        background-color: lightblue;
+    }
+}
 
 /* Animação de Fade In */
 @keyframes fadeIn {
@@ -195,7 +200,7 @@ footer{
     height: 68px;
     color: white;
     padding: 12px;
-    margin-top: auto;
+    margin-bottom: 0%;
 }
 footer > h2 {
     color: white;
