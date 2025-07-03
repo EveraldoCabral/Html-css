@@ -1,0 +1,83 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área do Aluno - SIGE</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="../../js/script.js"></script>
+  <!-- Ícones do Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2><i class="fas fa-school"></i> SIGE</h2>
+    <ul>
+      <li><i class="fas fa-home"></i> Página Inicial</li>
+      <li><i class="fas fa-graduation-cap"></i> Notas</li>
+      <li><i class="fas fa-calendar-alt"></i> Boletim</li>
+      <li><i class="fas fa-money-bill-wave"></i> Propinas</li>
+      <li><i class="fas fa-info-circle"></i> Informações</li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2>Área do Aluno</h2>
+    <h3>Bem-vindo, João!</h3>
+    <div class="grid">
+       <div class="card"> 
+         <i class="fas fa-calendar-times"></i>
+          <p>Faltas</p>
+       </div>
+       <div class="card">
+          <i class="fas fa-chart-line"></i>
+          <p>Balanço & Desempenho</p>
+        </div>
+       <div class="card">
+          <i class="fas fa-file-alt"></i>
+          <p>Ficha Curricular</p>
+       </div>
+       <div class="card">
+        <i class="fas fa-tasks"></i>
+         <p>Actividades</p>
+       </div>
+    </div>
+    <canvas id="chartDesempenho" width="1000" height="400"></canvas>
+  </div>
+  <script src="../../js/chart.umd.js"></script>
+  <script>
+    const ctx = document.getElementById('chartDesempenho').getContext('2d');
+
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio'],
+      datasets: [{
+        label: 'Desempenho (%)',
+        data: [80, 15, 78, 20, 95],
+        backgroundColor: 'rgba(61, 127, 197, 0.2)',
+        borderColor: '#007bff',
+        borderWidth: 2,
+        fill: true,
+        tension: 0.4,
+        pointBackgroundColor: '#007bff',
+        pointRadius: 5,
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: true, position: 'top' },
+        title: { display: true, text: 'Desempenho Académico - 2025' }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          max: 100,
+          title: { display: true, text: 'Porcentagem' }
+        }
+      }
+    }
+  });
+  </script>
+  
+</body>
+</html>

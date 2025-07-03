@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistema Integrado de Gestão Escolar</title>
+  <link rel="stylesheet" href="../src/style/style.css">
+  <script src="../src/js/script.js" defer></script>
+  <!-- Ícones do Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Sistema Integrado de Gestão Escolar</h1>
+    </header>
+    <main class="grid">
+      <div class="card" onclick="window.location.href='screens/StudentArea/index.html'">
+        <i class="fas fa-user-graduate"></i>
+        <p>Área do Aluno</p>
+      </div>
+      <div class="card" onclick="navegar('encarregado')">
+        <i class="fas fa-user-friends"></i>
+        <p>Área do Encarregado de Educação</p>
+      </div>
+      <div class="card" onclick="window.location.href='screens/TeacherArea/index.html'">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <p>Área do Professor</p>
+      </div>
+      <div class="card" onclick="navegar('matriculas')">
+        <i class="fas fa-calendar-alt"></i>
+        <p>Gestão de Matrículas, Classes e Turmas</p>
+      </div>
+      <div class="card" onclick="navegar('horarios')">
+        <i class="fas fa-clock"></i>
+        <p>Horários e Gestão Pedagógica</p>
+      </div>
+      <div class="card" onclick="navegar('notas')">
+        <i class="fas fa-file-alt"></i>
+        <p>Gestão de Notas, Pautas e Boletins</p>
+      </div>
+      <div class="card" onclick="window.location.href='screens/PresenceMark/index.html'">
+        <i class="fas fa-book-open"></i>
+        <p>Livro de Ponto Virtual</p>
+      </div>
+      <div class="card" onclick="navegar('relatorios')">
+        <i class="fas fa-print"></i>
+        <p>Relatórios e Impressões</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
